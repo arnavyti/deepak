@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f8fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* Header */
+
+header {
+    background: linear-gradient(135deg, #005bea, #00c6fb);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+header h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 22px;
+}
+
+
+/* Navigation */
+
+nav {
+    background: #06283d;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 16px 22px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #00a8ff;
+    color: white;
+}
+
+
+/* Hero Section */
+
+.hero {
+    background: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #005bea;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    background: #005bea;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #003c9e;
+}
+
+
+/* Cards */
+
+.card {
+    background: white;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    color: #005bea;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #00a8ff;
+    margin-bottom: 10px;
+}
+
+
+/* Home Highlights */
+
+.highlights {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+
+.box {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.box:hover {
+    background: #eaf6ff;
+    transform: scale(1.05);
+}
+
+.box h3 {
+    color: #005bea;
+    margin-bottom: 10px;
+}
+
+
+/* Lists */
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 8px 0;
+    font-size: 17px;
+}
+
+
+/* Links */
+
+a {
+    color: #005bea;
+}
+
+.card a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Quote Section */
+
+.quote {
+    background: linear-gradient(135deg, #005bea, #00c6fb);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.quote h2 {
+    font-size: 28px;
+}
+
+
+/* Footer */
+
+footer {
+    background: #06283d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+/* Mobile Responsive */
+
+@media(max-width:768px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 12px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .highlights {
+        flex-direction: column;
+    }
+
+}
