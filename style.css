@@ -1,0 +1,526 @@
+/* ===== Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ===== Global ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg,#f5f9ff,#eaf4ff);
+    color: #333;
+    line-height: 1.7;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+
+/* ===== Header ===== */
+
+header {
+
+    background:
+    linear-gradient(
+    rgba(0,40,100,0.75),
+    rgba(0,180,255,0.65)
+    ),
+    url("https://images.unsplash.com/photo-1509062522246-3755977927d7");
+
+    background-size: cover;
+    background-position: center;
+
+    color:white;
+    text-align:center;
+
+    padding:90px 20px;
+
+}
+
+
+header h1 {
+
+    font-size:55px;
+    font-weight:700;
+    letter-spacing:2px;
+
+    animation: slideDown 1s;
+
+}
+
+
+header p {
+
+    font-size:25px;
+    margin-top:15px;
+
+    animation: fadeIn 2s;
+
+}
+
+
+
+/* ===== Navigation ===== */
+
+
+nav {
+
+    background:#061a40;
+    position:sticky;
+    top:0;
+    z-index:999;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+
+}
+
+
+nav ul {
+
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+
+}
+
+
+nav ul li a {
+
+    color:white;
+    text-decoration:none;
+
+    padding:18px 25px;
+
+    display:block;
+
+    font-weight:500;
+
+    transition:.4s;
+
+}
+
+
+nav ul li a:hover,
+nav ul li a.active {
+
+
+    background:#00bfff;
+
+    border-radius:30px;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* ===== Hero ===== */
+
+
+.hero {
+
+
+    padding:80px 20px;
+
+    text-align:center;
+
+
+}
+
+
+.hero h2 {
+
+
+    font-size:42px;
+
+    color:#004aad;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.hero p {
+
+
+    max-width:850px;
+
+    margin:auto;
+
+    font-size:19px;
+
+}
+
+
+
+.btn {
+
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:15px 35px;
+
+    background:linear-gradient(
+    45deg,#0066ff,#00c6ff
+    );
+
+    color:white;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.4s;
+
+
+}
+
+
+.btn:hover {
+
+
+    transform:scale(1.1);
+
+    box-shadow:0 10px 25px #00aaff;
+
+
+}
+
+
+
+/* ===== Cards ===== */
+
+
+.card {
+
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(10px);
+
+
+    padding:35px;
+
+
+    margin:35px 0;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.12);
+
+
+    border:1px solid rgba(255,255,255,.5);
+
+
+    transition:.4s;
+
+
+}
+
+
+.card:hover {
+
+
+    transform:translateY(-10px);
+
+
+    box-shadow:
+
+    0 25px 50px rgba(0,90,255,.25);
+
+
+}
+
+
+
+.card h2 {
+
+
+    color:#005bea;
+
+    margin-bottom:20px;
+
+    font-size:30px;
+
+
+}
+
+
+
+.card h3 {
+
+
+    color:#00a6ff;
+
+}
+
+
+
+/* ===== Highlights ===== */
+
+
+.highlights {
+
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    margin:50px auto;
+
+
+}
+
+
+
+.box {
+
+
+    background:white;
+
+
+    padding:35px;
+
+
+    text-align:center;
+
+
+    border-radius:25px;
+
+
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+
+
+    transition:.4s;
+
+
+}
+
+
+
+.box:hover {
+
+
+    background:#0066ff;
+
+    color:white;
+
+    transform:translateY(-12px);
+
+
+}
+
+
+
+.box h3 {
+
+
+    color:#005bea;
+
+    font-size:23px;
+
+}
+
+
+.box:hover h3 {
+
+
+    color:white;
+
+
+}
+
+
+
+/* ===== Lists ===== */
+
+
+ul li {
+
+
+    margin:12px 0;
+
+    font-size:17px;
+
+
+}
+
+
+
+/* ===== Quote ===== */
+
+
+.quote {
+
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #004aad,
+    #00c6ff
+    );
+
+
+    color:white;
+
+
+    text-align:center;
+
+
+    padding:60px 20px;
+
+
+}
+
+
+.quote h2 {
+
+
+    font-size:32px;
+
+}
+
+
+
+/* ===== Footer ===== */
+
+
+footer {
+
+
+    background:#061a40;
+
+
+    color:white;
+
+
+    text-align:center;
+
+
+    padding:25px;
+
+
+}
+
+
+
+/* ===== Animations ===== */
+
+
+@keyframes slideDown {
+
+
+from {
+
+transform:translateY(-50px);
+
+opacity:0;
+
+}
+
+to {
+
+transform:translateY(0);
+
+opacity:1;
+
+}
+
+
+}
+
+
+
+@keyframes fadeIn {
+
+
+from {
+
+opacity:0;
+
+}
+
+to {
+
+opacity:1;
+
+}
+
+
+}
+
+
+
+/* ===== Mobile ===== */
+
+
+@media(max-width:768px){
+
+
+header h1 {
+
+font-size:38px;
+
+}
+
+
+header p {
+
+font-size:18px;
+
+}
+
+
+nav ul {
+
+flex-direction:column;
+
+}
+
+
+nav ul li a {
+
+text-align:center;
+
+}
+
+
+.hero h2 {
+
+font-size:30px;
+
+}
+
+
+.card {
+
+padding:25px;
+
+}
+
+
+}
