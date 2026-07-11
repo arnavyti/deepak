@@ -1,0 +1,266 @@
+/* =========================
+   Teacher Portfolio CSS
+   Modern Professional Style
+========================= */
+
+:root {
+    --primary: #2563eb;
+    --secondary: #0f172a;
+    --accent: #38bdf8;
+    --light: #f8fafc;
+    --white: #ffffff;
+    --text: #334155;
+    --shadow: 0 10px 30px rgba(0,0,0,0.08);
+    --radius: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--light);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--secondary);
+}
+
+
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 600;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+
+/* Hero Section */
+
+.hero {
+    min-height: 90vh;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: clamp(40px,5vw,65px);
+    font-weight: 800;
+}
+
+.hero h1 span {
+    color: var(--primary);
+}
+
+.hero p {
+    margin: 25px 0;
+    font-size: 18px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: var(--primary);
+    color:white;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    background:#1d4ed8;
+}
+
+
+/* Profile Image */
+
+.profile img {
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid white;
+    box-shadow:var(--shadow);
+}
+
+
+/* Sections */
+
+section {
+    padding:80px 8%;
+}
+
+.section-title {
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2 {
+    font-size:40px;
+}
+
+
+/* Cards */
+
+.card-container {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card {
+    background:white;
+    padding:30px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    transition:.3s;
+}
+
+.card:hover {
+    transform:translateY(-10px);
+}
+
+.card h3 {
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+
+/* Skills */
+
+.skill {
+    margin-bottom:20px;
+}
+
+.skill span {
+    font-weight:600;
+}
+
+.progress {
+    height:10px;
+    background:#e2e8f0;
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:8px;
+}
+
+.progress div {
+    height:100%;
+    background:linear-gradient(90deg,var(--primary),var(--accent));
+}
+
+
+/* Contact */
+
+.contact-box {
+    background:white;
+    padding:40px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    text-align:center;
+}
+
+
+/* Footer */
+
+footer {
+    background:var(--secondary);
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+
+/* Animation */
+
+.fade {
+    animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .navbar {
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .nav-links {
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero {
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .profile img {
+        width:250px;
+        height:250px;
+    }
+
+    .section-title h2 {
+        font-size:32px;
+    }
+}
